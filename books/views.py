@@ -5,7 +5,7 @@ from django_filters.rest_framework import DjangoFilterBackend
 from rest_framework.response import Response
 
 class BookViewSet(viewsets.ModelViewSet):
-    """Listando clientes"""
+    """Listando livros"""
     queryset =Book.objects.all()
     serializer_class = BookSerializer
     filter_backends = [DjangoFilterBackend, filters.OrderingFilter, filters.SearchFilter]
