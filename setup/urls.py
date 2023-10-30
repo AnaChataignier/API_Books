@@ -5,9 +5,10 @@ from books.views import BookViewSet
 
 
 router = routers.DefaultRouter()
-router.register('books', BookViewSet)
+router.register(r'books', BookViewSet)
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include(router.urls)),
+
 ]
